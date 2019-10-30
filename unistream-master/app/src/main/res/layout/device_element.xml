@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015, Elinistech nissim@elinistech.com
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, with or without modification, are NOT permitted
+  ~
+
+  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dp" 
+    android:textColor="@color/black"
+    >
+
+    <TextView
+        android:id="@+id/paired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/paired"
+        android:textSize="12dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/rssi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/paired"
+        android:textSize="12dp"
+        android:visibility="gone"
+        android:text="@string/rssi" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textColor="@android:color/black"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20dp"
+        android:minHeight="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentRight="false"
+        android:text="@string/name" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:visibility="gone"
+        android:textSize="10dp"
+        android:text="@string/addr" />
+
+</RelativeLayout>
